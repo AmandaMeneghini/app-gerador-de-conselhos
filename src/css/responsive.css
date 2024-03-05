@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .advice-card {
+      max-width: 340px;
+      padding: 22px;
+    }
+  
+    .advice-card .title {
+      font-size: 10px;
+      margin-top: 18px;
+    }
+  
+    .advice-card .advice-text {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .advice-card .image-divider{
+      margin-bottom: 40px;
+    }
+  }

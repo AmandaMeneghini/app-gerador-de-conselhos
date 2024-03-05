@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Outfit:wght@300;400;600&display=swap");
+
+body {
+  background-color: var(--background-color);
+  font-family: "manrope", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.advice-card {
+  position: relative;
+  background-color: var(--advice-card-color);
+  max-width: 540px;
+  box-sizing: border-box;
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: 10px 50px 50px 0px rgba(3, 13, 30, 0.2);
+}
+
+.advice-card .title {
+  color: var(--advice-dice-color);
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.advice-card .advice-text {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.advice-card .image-divider {
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.advice-card .align-advice-button {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 90%;
+  bottom: 0;
+}
+
+.advice-card .align-advice-button .advice-button {
+  display: flex;
+  background-color: var(--advice-dice-color);
+  padding: 20px;
+  width: 65px;
+  border-radius: 50%;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: 1s ease-in-out;
+}
+
+.advice-card .align-advice-button .advice-button:hover {
+  box-shadow: 0px 0px 40px 3px var(--advice-dice-color);
+  cursor: pointer;
+}
