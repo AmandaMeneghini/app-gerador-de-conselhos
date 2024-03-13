@@ -2,9 +2,7 @@ const adviceButton = document.querySelector(".advice-button");
 const adviceText = document.querySelector(".advice-text");
 const titleAndAdviceId = document.querySelector(".advice-id");
 
-adviceButton.addEventListener("click", () => {
-    drawAdvice();
-});
+adviceButton.addEventListener("click", drawAdvice);
 
 async function seekRandomAdvice(){ 
     const url = 'https://api.adviceslip.com/advice';
