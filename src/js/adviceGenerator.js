@@ -10,19 +10,16 @@ async function seekRandomAdvice(){
     return await answer.json();
 };
 
-async function implementIdInHTML(){
-    const randomAdvice = await seekRandomAdvice();
-    const idRandomAdvice = await randomAdvice.slip.id;
+async function implementIdInHTML(idRandomAdvice){
     titleAndAdviceId.innerHTML = `advice #${idRandomAdvice}`
 }
 
-async function implementAdviceTextInHTML(){ 
-    const randomAdvice = await seekRandomAdvice();
-    const textRandomAdvice = await randomAdvice.slip.advice;
+async function implementAdviceTextInHTML(textRandomAdvice){ 
     adviceText.innerHTML = `"${textRandomAdvice}"`
 }
 
 async function drawAdvice() {
-    implementIdInHTML();
-    implementAdviceTextInHTML();
+    const randomAdvice = await seekRandomAdvice();
+    implementIdInHTML(randomAdvice.slip.id);
+    implementAdviceTextInHTML(randomAdvice.slip.advice);
 };
